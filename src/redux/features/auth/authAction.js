@@ -12,13 +12,13 @@ export const userLogin = createAsyncThunk(
       if (data.success) {
         alert(data.message);
         localStorage.setItem("token", data.token);
-        window.location.replace('/portal')
-        // if (data.user.role=='admin') {
-        //   window.location.replace("/admin");
-        // }
-        // else{
-        //   window.location.replace("/portal");
-        // }
+        // window.location.replace('/portal')
+        if (data.user.role=='admin') {
+          window.location.replace("/admin");
+        }
+        else{
+          window.location.replace("/portal");
+        }
       }
       return data;
     } catch (error) {

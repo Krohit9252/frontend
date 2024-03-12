@@ -65,7 +65,7 @@ function ModalForm() {
   return (
     <>
       <Button variant="primary" onClick={handleShowModal}>
-        Book Now
+        ADD SIDEBAR
       </Button>
 
       <Modal show={showModal} onHide={handleCloseModal}>

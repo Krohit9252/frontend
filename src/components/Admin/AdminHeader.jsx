@@ -22,7 +22,7 @@ const AdminHeader = ({toggleSidebar}) => {
         <div >
           <div className="logo d-flex align-items-center justify-content-around">
             
-            <span className=" d-none d-lg-block"><Link to="/admin">Loganix</Link></span>
+            <span className=" d-none d-lg-block"><Link to="/admin">UPDM</Link></span>
           </div>
          
         </div>

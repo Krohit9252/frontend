@@ -11,7 +11,7 @@ export const userLogin = createAsyncThunk(
       //store token
       if (data.success) {
         alert(data.message);
-        console.log(data)
+        console.log("backend data",data)
         localStorage.setItem("token", data.token);
         // window.location.replace('/portal')
         // if (data.user.role=='admin') {

@@ -52,6 +52,7 @@ function ModalForm() {
     event.preventDefault();
     try {
       const response = await API.post("/sidebar/create-sidebar", formData);
+      alert("Create Successfully")
       console.log("Form data saved successfully:", response.data);
      
     } catch (error) {

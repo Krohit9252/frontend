@@ -153,7 +153,7 @@ const AdminSidebar = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await API.get("/all-sidebarItem"); // Replace with your API endpoint
+        const response = await API.get("sidebar/all-sidebarItem"); // Replace with your API endpoint
         setSidebarData(response.data);
       } catch (error) {
         console.error("Error fetching sidebar data:", error);
@@ -162,7 +162,7 @@ const AdminSidebar = () => {
     };
 
     fetchData();
-  }, []);
+  });
 
   return (
     <>

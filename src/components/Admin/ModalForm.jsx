@@ -51,7 +51,7 @@ function ModalForm() {
   const handleSubmit = async(event) => {
     event.preventDefault();
     try {
-      const response = await API.post("/admin/create-sidebar", formData);
+      const response = await API.post("/sidebar/create-sidebar", formData);
       console.log("Form data saved successfully:", response.data);
      
     } catch (error) {

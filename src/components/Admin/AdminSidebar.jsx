@@ -187,8 +187,9 @@ const AdminSidebar = () => {
                   // <li  className="nav-item  my-3" key={subtopic.id}>
                   //     <Link style={{textDecoration:"none", backgroundColor:"transparent" ,color:"white"}} to={subtopic.slug}><span>{subtopic.icon}</span>{subtopic.title}</Link>
                   // </li>
-                  <div className="nav-item d-flex" key={subtopic.title}>
-                    <Link
+                  <div className="nav-item d-flex d-flex justify-content-between" key={subtopic.title}>
+                    <div>
+                      <Link
                       className="nav-link collapsed"
                       to={subtopic.slug}
                       style={{
@@ -199,7 +200,8 @@ const AdminSidebar = () => {
                     >
                       {/* <span >{subtopic.icon}</span> */}
                       <span className="mx-3">{subtopic.title}</span>
-                    </Link>
+                     </Link>
+                    </div>
                     <div>
                       <span><TiEdit style={{width:'1.5em',height:'1.5em',color:"white",marginLeft:'12px'}}/></span>
                       <span><MdDelete style={{width:'1.5em',height:'1.5em',color:"white",marginLeft:'12px'}}/></span>
